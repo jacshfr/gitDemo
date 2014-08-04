@@ -1,0 +1,25 @@
+<script>
+	var myNeighborhood = "Ballard";
+	var Fremont = "Fremont";
+	var Queen_Anne = "Queen Anne";
+	var guess, guess2, outputMessage;
+
+	guess = prompt("What neighborhood do you think I want to eat in? Choose Ballard, Fremont, or Queen Anne");
+	if (guess === myNeighborhood) {
+		outputMessage = "Let's eat!";
+	}
+	else { 
+		guess2 = prompt("Here's a hint, there are huge Locks there");
+		if (guess2 === myNeighborhood) {
+			outputMessage = "I'm hungry, let's go!";
+		}
+		else {
+		outputMessage = "Look at your map and try again";
+		}
+	}
+	
+
+	alert(outputMessage);
+
+
+</script>
